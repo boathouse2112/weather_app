@@ -1,0 +1,32 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boathouse2112/weather_app.git"
+  },
+  "author": "Mark Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boathouse2112/weather_app/issues"
+  },
+  "homepage": "https://github.com/boathouse2112/weather_app#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.0",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}

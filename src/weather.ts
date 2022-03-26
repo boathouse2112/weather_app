@@ -40,12 +40,17 @@ const getCoordinates = async function (city: string): Promise<Coords> {
   }
 };
 
+/**
+ * Gets weather data at the given city.
+ * @param city 'city' | 'city, state' | 'city, state, country'
+ */
 async function getWeatherData(city: string): Promise<void>;
+/**
+ * Gets weather data at the given coordinates
+ * @param coords
+ */
 async function getWeatherData(coords: Coords): Promise<void>;
 
-/**
- * Gets weather data at the given coordinates.
- */
 async function getWeatherData(searchLocation: string | Coords) {
   const coords =
     typeof searchLocation === 'string'

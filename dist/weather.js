@@ -39,9 +39,6 @@ const getCoordinates = function (city) {
         }
     });
 };
-/**
- * Gets weather data at the given coordinates.
- */
 function getWeatherData(searchLocation) {
     return __awaiter(this, void 0, void 0, function* () {
         const coords = typeof searchLocation === 'string'

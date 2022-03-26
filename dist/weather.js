@@ -54,4 +54,7 @@ function getWeatherData(searchLocation) {
         return weatherData;
     });
 }
+export const exportedForTesting = {
+    isCoords,
+};
 export { getCoordinates, getWeatherData };

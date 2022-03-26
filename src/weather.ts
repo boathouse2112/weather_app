@@ -69,4 +69,8 @@ async function getWeatherData(searchLocation: string | Coords) {
   return weatherData;
 }
 
+export const exportedForTesting = {
+  isCoords,
+};
+
 export { getCoordinates, getWeatherData };

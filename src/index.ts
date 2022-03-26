@@ -1,7 +1,7 @@
-import { getCoordinates, getWeather } from './weather.js';
+import { getCoordinates, getWeatherData } from './weather.js';
 
 const main = function () {
-  getWeather('Rochester').then((weather) => {
+  getWeatherData('Rochester').then((weather) => {
     console.log(weather);
   });
 };

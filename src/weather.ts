@@ -40,13 +40,13 @@ const getCoordinates = async function (city: string): Promise<Coords> {
   }
 };
 
-async function getWeather(city: string): Promise<void>;
-async function getWeather(coords: Coords): Promise<void>;
+async function getWeatherData(city: string): Promise<void>;
+async function getWeatherData(coords: Coords): Promise<void>;
 
 /**
  * Gets weather data at the given coordinates.
  */
-async function getWeather(searchLocation: string | Coords) {
+async function getWeatherData(searchLocation: string | Coords) {
   const coords =
     typeof searchLocation === 'string'
       ? await getCoordinates(searchLocation)
@@ -64,4 +64,4 @@ async function getWeather(searchLocation: string | Coords) {
   return weatherData;
 }
 
-export { getCoordinates, getWeather };
+export { getCoordinates, getWeatherData };

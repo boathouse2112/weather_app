@@ -42,7 +42,7 @@ const getCoordinates = function (city) {
 /**
  * Gets weather data at the given coordinates.
  */
-function getWeather(searchLocation) {
+function getWeatherData(searchLocation) {
     return __awaiter(this, void 0, void 0, function* () {
         const coords = typeof searchLocation === 'string'
             ? yield getCoordinates(searchLocation)
@@ -57,4 +57,4 @@ function getWeather(searchLocation) {
         return weatherData;
     });
 }
-export { getCoordinates, getWeather };
+export { getCoordinates, getWeatherData };
